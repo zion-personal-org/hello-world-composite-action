@@ -1,5 +1,8 @@
 name: '[zion] test hello world action greeting'
 description: 'Greet someone'
+branding:
+  icon: 'award'
+  color: 'green'
 inputs:
   who-to-greet:  # id of input
     description: 'Who to greet'
@@ -7,6 +10,7 @@ inputs:
     default: 'World'
 outputs:
   random-number:
+    color: "green"
     description: "Random number"
     value: ${{ steps.random-number-generator.outputs.random-number }}
 runs:
